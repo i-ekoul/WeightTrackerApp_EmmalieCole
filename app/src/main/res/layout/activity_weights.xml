@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/weights_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".WeightsActivity">
+
+    <!-- Goal + Unit Row -->
+    <LinearLayout
+        android:id="@+id/row_goal_unit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:id="@+id/editGoal"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:hint="@string/hint_goal_weight"
+            android:inputType="numberDecimal"
+            android:autofillHints="weight"
+            tools:text="140.0" />
+
+        <Button
+            android:id="@+id/btnSetGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:minWidth="72dp"
+            android:text="@string/btn_set_goal" />
+
+        <!-- Use SwitchCompat; label text will be set dynamically to 'kg' or 'lbs' -->
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/label_unit"
+            tools:checked="true"
+            tools:text="kg" />
+    </LinearLayout>
+
+    <!-- Goal status / distance to goal -->
+    <TextView
+        android:id="@+id/textGoalStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        tools:text="Goal: 140.0 lb • You are 5.0 lb above goal." />
+
+    <!-- Existing date / weight inputs and add button -->
+    <EditText
+        android:id="@+id/editDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_date"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:autofillHints="username" />
+
+    <EditText
+        android:id="@+id/editWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/hint_weight"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:autofillHints="weight" />
+
+    <Button
+        android:id="@+id/btnAddWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:minWidth="72dp"
+        android:text="@string/btn_add" />
+
+    <!-- List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerWeights"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        tools:listitem="@layout/item_weight" />
+</LinearLayout>

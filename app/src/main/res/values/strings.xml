@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">WeightTrackerApp_EmmalieCole</string>
+    <string name="app_title">Weight Tracker</string>
+
+    <!-- Login screen -->
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_create_account">Create Account</string>
+
+    <!-- Weights / grid screen -->
+    <string name="header_weights">Your Weights</string>
+    <string name="btn_add">Add</string>
+    <string name="btn_add_desc">Add new weight entry</string>
+    <string name="hint_date">Date (YYYY-MM-DD)</string>
+    <string name="hint_weight">Weight</string>
+    <string name="label_date">Date</string>
+    <string name="label_weight">Weight</string>
+    <string name="label_actions">Actions</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_delete">Delete</string>
+
+    <!-- SMS permission screen -->
+    <string name="header_sms">SMS Notifications</string>
+    <string name="sms_explainer">
+        This app can notify you via SMS when you reach your goal weight.
+        Android requires SMS permission; you may allow or deny.
+    </string>
+    <string name="btn_enable_sms">Enable SMS Permission</string>
+    <string name="sms_status_off">Permission not granted</string>
+
+    <!-- SMS runtime-permission UI text -->
+    <string name="sms_status_granted">Permission granted</string>
+    <string name="sms_status_denied">Permission not granted</string>
+    <string name="sms_toast_granted">SMS permission granted</string>
+    <string name="sms_toast_denied">Permission denied — you can enable it later in Settings.</string>
+    <string name="sms_no_telephony">No telephony on this device/emulator — skipping permission.</string>
+
+    <!-- Row (list item) label -->
+    <string name="label_weight_value">Weight:</string>
+
+    <!-- Login UX -->
+    <string name="login_missing">Please enter a username and password.</string>
+    <string name="login_failed">Login failed. Check your credentials.</string>
+    <string name="account_created">Account created!</string>
+    <string name="account_exists">That username already exists.</string>
+    <string name="login_exists">That username already exists.</string>
+    <string name="login_invalid">Invalid username or password.</string>
+
+    <!-- Goal & Units (new) -->
+    <string name="hint_goal_weight">Goal weight</string>
+    <string name="btn_set_goal">Set Goal</string>
+    <string name="label_units">Units</string>
+    <string name="unit_lbs">lbs</string>
+    <string name="unit_kg">kg</string>
+
+    <string name="goal_status_none">No goal set.</string>
+    <string name="goal_status_reached">Goal reached!</string>
+    <string name="goal_status_away">Goal: %1$.1f %3$s · You are %2$.1f %3$s away</string>
+    <string name="label_unit">Unit</string>
+
+
+
+</resources>
